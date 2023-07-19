@@ -1,0 +1,23 @@
+# Editors
+.idea/
+oldclient/.idea/
+server/.idea/
+.vscode/
+client/.vscode/
+server/.vscode/
+
+# Env
+oldclient/.env
+server/.env
+
+# Node.js
+## Server
+server/node_modules/
+server/dist/
+server/package-lock.json
+## Client
+client/node_modules/
+client/dist/
+client/.nuxt/
+client/package-lock.json
+client/.output/

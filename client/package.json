@@ -1,0 +1,26 @@
+{
+  "name": "dashboard-client",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preprod": "rm -rf .output && npm run build && node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.4.3",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@pinia/nuxt": "^0.4.11",
+    "daisyui": "^2.46.0",
+    "lucide-vue-next": "^0.261.0",
+    "pinia": "^2.1.4"
+  }
+}
