@@ -1,0 +1,16 @@
+### Login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "mail": "toto@mail.com",
+  "password": "toto"
+}
+
+### Authorization by token
+GET http://localhost:8080/users/@me
+Authorization: Bearer
+
+### Authorization by token
+POST http://localhost:8080/users/logout
+Authorization: Bearer
