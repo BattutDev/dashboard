@@ -19,7 +19,7 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.2.0",
     "@pinia/nuxt": "^0.4.11",
-    "daisyui": "^2.46.0",
+    "daisyui": "^2.52.0",
     "lucide-vue-next": "^0.261.0",
     "pinia": "^2.1.4"
   }

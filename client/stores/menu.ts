@@ -1,4 +1,4 @@
-export type MenuType = 'home' | 'todo-list' | 'stats' | 'settings';
+export type MenuType = 'home' | 'todo-list' | 'stats' | 'settings' | 'account';
 
 import { defineStore } from 'pinia'
 

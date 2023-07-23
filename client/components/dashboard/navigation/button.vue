@@ -29,7 +29,7 @@ const openMenu = ref((menu: MenuType) => {
 
     if (props.redirect) {
         window.location.href = props.redirect
-    } else {
+    } else if (props.menu) {
         const store = useMenuStore()
         const {change} = store
         change(menu);

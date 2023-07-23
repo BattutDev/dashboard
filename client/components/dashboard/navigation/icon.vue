@@ -5,6 +5,7 @@
         <FileBarChart2 v-if="name === 'file-bar-chart-2'" />
         <Github v-if="name === 'github'" />
         <Settings v-if="name === 'settings'" />
+        <UserCircle v-if="name === 'account'" />
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import {
     FileBarChart2,
     Github,
     Settings,
+    UserCircle
 } from "lucide-vue-next";
 
 export type DashboardNavigationIconName =
@@ -23,6 +25,7 @@ export type DashboardNavigationIconName =
     | "file-bar-chart-2"
     | "github"
     | "settings"
+    | "account"
 
 type Props = {
     name: DashboardNavigationIconName;

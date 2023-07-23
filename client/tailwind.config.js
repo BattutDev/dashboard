@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   daisyui: {
-    themes: [
-        'light', 'dark',
-
-    ],
+    themes: ['winter', 'night'],
   },
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -16,9 +13,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      animation: {
-        reveal: "width 0.5s linear",
-      },
       colors: {
         'flashblue': '#3da9fc'
       }

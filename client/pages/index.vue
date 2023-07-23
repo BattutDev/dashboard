@@ -8,18 +8,24 @@
               <DashboardNavigationButton icon="github" name="Github" menu="home" redirect="https://github.com/battutdev/dashboard"/>
           </ul>
           <ul class="flex p-2 items-center">
-              <DashboardNavigationButton icon="settings" name="Paramètres" menu="settings"/>
+              <DashboardNavigationButton icon="account" name="Compte" menu="account"/>
           </ul>
       </div>
       <div class="h-full w-full shadow bg-gray-100 dark:bg-gray-800 rounded-lg overflow-y-scroll">
           <!--{{menu}}-->
           <DashboardTodo v-if="menu === 'todo-list'"/>
           <DashboardStats v-if="menu === 'stats'"/>
+          <DashboardAccount v-if="menu === 'account'"/>
       </div>
   </div>
 </template>
 
 <script setup lang="ts">
+
+definePageMeta({
+    middleware: ["auth"],
+});
+
 
 import {ref} from 'vue';
 import {useMenuStore} from "~/stores/menu";
